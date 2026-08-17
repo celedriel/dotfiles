@@ -1,0 +1,5 @@
+com.github.tchx84.Flatseal
+com.mattjakeman.ExtensionManager
+com.spotify.Client
+md.obsidian.Obsidian
+org.gimp.GIMP

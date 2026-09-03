@@ -134,4 +134,11 @@ source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 eval "$(starship init zsh)"
 
 alias pibid='cd "/home/msnessas/Documentos/UFPA/#PIBID - 2025"'
+alias ufpa='cd "/home/msnessas/Documentos/UFPA"'
+alias livros='cd "/home/msnessas/Documentos/LIVROS"'
+alias docus='cd "/home/msnessas/Documentos/Documentos"'
+alias epubs='cd "/run/media/msnessas/HD Externo 3/EPUBs"'
 
+baixar() {
+    yt-dlp --js-runtimes node --cookies-from-browser firefox -f "bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]/best[ext=mp4]" --merge-output-format mp4 -o "~/Downloads/%(title)s.%(ext)s" "$1"
+}

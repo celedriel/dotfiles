@@ -221,3 +221,6 @@
 - zip-0:3.0-45.fc44.x86_64
 - zram-generator-defaults-0:1.2.1-5.fc44.noarch
 - zsh-0:5.9-21.fc44.x86_64
+vivaldi-stable
+fuse
+fuse-libs

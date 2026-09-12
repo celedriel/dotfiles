@@ -2,8 +2,8 @@ blur-my-shell@aunetx
 extension-list@tu.berry
 just-perfection-desktop@just-perfection
 auto-move-windows@gnome-shell-extensions.gcampax.github.com
+dash-to-panel@jderose9.github.com
 caffeine@patapon.info
-dash-to-dock@micxgx.gmail.com
 logomenu@aryan_k
 space-bar@luchrioh
 top-bar-organizer@julian.gse.jsts.xyz

@@ -1,1 +1,13 @@
-['extension-list@tu.berry', 'openbar@neuromorph', 'auto-move-windows@gnome-shell-extensions.gcampax.github.com', 'pop-shell@system76.com', 'caffeine@patapon.info', 'logomenu@aryan_k', 'top-bar-organizer@julian.gse.jsts.xyz', 'tophat@fflewddur.github.io', 'space-bar@luchrioh', 'dash-to-dock@micxgx.gmail.com', 'runcat@kolesnikov.se', 'blur-my-shell@aunetx', 'tilingshell@ferrarodomenico.com', 'just-perfection-desktop@just-perfection', 'gspotify@sogi.is-a.dev', 'clipboard-indicator@Dieg0Js.github.io', 'clipboard-indicator@tudmotu.com']
+blur-my-shell@aunetx
+extension-list@tu.berry
+just-perfection-desktop@just-perfection
+auto-move-windows@gnome-shell-extensions.gcampax.github.com
+caffeine@patapon.info
+dash-to-dock@micxgx.gmail.com
+logomenu@aryan_k
+space-bar@luchrioh
+top-bar-organizer@julian.gse.jsts.xyz
+tophat@fflewddur.github.io
+runcat@kolesnikov.se
+clipboard-indicator@tudmotu.com
+pop-shell@system76.com

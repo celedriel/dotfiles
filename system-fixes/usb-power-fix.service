@@ -1,0 +1,11 @@
+[Unit]
+Description=Força energia maxima nas portas e hubs USB (Anti-Lag)
+After=multi-user.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/usb-power-fix.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

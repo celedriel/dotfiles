@@ -12,6 +12,7 @@
 - ` Fonte do Terminal: Monaspace Neon NF` 
 
 ![setup](png/rice.png)
+![setup](png/rice1.png)
 
 ## Estrutura do Repositório
 
@@ -83,4 +84,5 @@ cd ~/dotfiles
 ``` bash
 chmod +x install.sh
 ./install.sh
-``` 
+```
+![setup](png/rice2.png)

@@ -8,6 +8,22 @@ if ! command -v stow &> /dev/null; then
     sudo dnf install stow -y
 fi
 
+# 2. Instalar pacotes do sistema (DNF)
+echo "=== Instalando dependências e pacotes do sistema (DNF) ==="
+if [ -f "packages/pacotes-dnf.txt" ]; then
+    sudo dnf install -y $(cat packages/pacotes-dnf.txt)
+else
+    echo "Aviso: Lista de pacotes DNF não encontrada em packages/pacotes-dnf.txt"
+fi
+
+# 3. Instalar aplicações Flatpak
+echo "=== Instalando aplicações Flatpak ==="
+if [ -f "packages/pacotes-flatpak.txt" ]; then
+    flatpak install -y flathub $(cat packages/pacotes-flatpak.txt)
+else
+    echo "Aviso: Lista de pacotes Flatpak não encontrada em packages/pacotes-flatpak.txt"
+fi
+
 echo "=== Aplicando configurações de utilizador com GNU Stow ==="
 # Aplica todas as configurações da raiz para a Home silenciosamente
 stow -t ~ .

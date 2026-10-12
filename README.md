@@ -1,41 +1,86 @@
 
 ## Resumo do Sistema
 
-| Componente | Tecnologia / Ferramenta |
-| :--- | :--- |
-| **OS** | Fedora Workstation |
-| **Desktop** | GNOME + Pop Shell & Tiling Shell |
-| **Shell** | Zsh + Starship prompt |
-| **Gestor de Configs** | GNU Stow |
+- `OS` - `Fedora Workstation` 
+- `Desktop` - `GNOME (Wayland)` 
+- `Shell` - `Zsh + Starship prompt` 
+- `Terminal` - `Kitty` 
+- `Gestor de Configs`- `GNU Stow` 
+
+**Aparência Geral:**
+- ` Tema do Sistema : Catppuccin Mocha` 
+- ` Fonte do Terminal: Monaspace Neon NF` 
+
+![setup](png/rice.png)
 
 ## Estrutura do Repositório
 
+**Extensões do GNOME:**
+
+- `Pop Shell`
+- `Dash to Dock` 
+- `Blur my Shell`
+- `Just Perfection` 
+- `Caffeine`
+- `Clipboard Indicator`
+- `Top Bar Organizer`  
+- `Space Bar`
+- `TopHat` 
+- `Extension List`
+- `RunCat`
+- `Logo Menu`
+- `Auto Move Windows` 
+
+**Ferramentas de Terminal & CLI**
+
+**Shell & Prompt:**
+- `zsh` configurado com aliases personalizados
+- `starship` (prompt rápido e customizável)
+
+**Utilitários:**
+- `stow` - gestor de dotfiles via symlinks
+- `btop` - monitor de sistema com tema customizado
+- `fastfetch` - exibição de informações do sistema
+- `zathura` - leitor de PDFs e documentos
+
+---
+
+**Estrutura de arquivos:**
+
 ``` 
 ~/dotfiles/
-├── btop/              # Configuração do monitor de sistema
-├── fastfetch/         # Informações do sistema no terminal
-├── gnome-rice/        # Configurações e scripts do GNOME
-├── gtk/               # Temas e definições GTK
-├── kitty/             # Emulador de terminal
-├── mpv/               # Reprodutor multimédia
-├── packages/          # Listas de pacotes DNF e Flatpak
-├── photogimp/         # Ajustes visuais do GIMP
-├── starship/          # Prompt do shell
-├── system-fixes/      # Ajustes de hardware e systemd
-├── zathura/           # Leitor de documentos
-├── zsh/               # Configurações do Zsh
-├── install.sh         # Script mestre de instalação
-└── README.md          # Documentação
+├── .config/           # Configurações injetadas pelo Stow (btop, gtk, kitty, mpv, etc.)
+├── .local/share/      # Ficheiros locais (assets do PhotoGIMP)
+├── gnome-rice/        # Scripts de backup e restauro (dconf, extensões)
+├── packages/          # Listas de pacotes para instalação (DNF, Flatpak)
+├── system-fixes/      # Scripts de sistema (ex: fix de energia USB, systemd)
+├── .stow-local-ignore # Regras de exclusão do Stow
+├── .zshrc             # Configuração raiz do Zsh
+└── install.sh         # Script de instalção
 ``` 
 
 ## Como Instalar
 
 Para clonar o repositório e aplicar todas as configurações e ajustes automaticamente:
-``` 
-bash
-git clone https://github.com/celedriel/dotfiles.git ~/dotfiles
-cd ~/dotfiles
-./install.sh
+
+
+**1. Atualizar o sistema e instalar o Git:**
+
+``` bash
+sudo dnf update -y
+sudo dnf install git -y
 ``` 
 
-![setup](png/rice.png)
+**2. Clonar o repositório para a Home:**
+ 
+``` bash
+git clone https://github.com/celedriel/dotfiles.git ~/dotfiles
+cd ~/dotfiles
+``` 
+
+**3. Dar permissão e executar o Script:**
+
+``` bash
+chmod +x install.sh
+./install.sh
+``` 

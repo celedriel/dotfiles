@@ -4,3 +4,4 @@ com.spotify.Client
 md.obsidian.Obsidian
 org.gimp.GIMP
 org.gnome.Gtranslator
+org.mozilla.firefox

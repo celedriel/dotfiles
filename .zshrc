@@ -138,9 +138,11 @@ alias ufpa='cd "/home/msnessas/Documentos/UFPA"'
 alias livros='cd "/home/msnessas/Documentos/LIVROS"'
 alias docus='cd "/home/msnessas/Documentos/Documentos"'
 alias epubs='cd "/run/media/msnessas/HD Externo 3/EPUBs"'
+alias t="source ~/.zshrc"
+alias tuta='nohup ~/.local/AppImages/tutanota-desktop-linux.AppImage > /dev/null 2>&1 &'
+
 
 baixar() {
     yt-dlp --js-runtimes node --cookies-from-browser firefox -f "bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]/best[ext=mp4]" --merge-output-format mp4 -o "~/Downloads/%(title)s.%(ext)s" "$1"
 }
 
-alias tuta='nohup ~/.local/AppImages/tutanota-desktop-linux.AppImage > /dev/null 2>&1 &'

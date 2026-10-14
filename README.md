@@ -85,9 +85,9 @@ cd ~/dotfiles
 chmod +x install.sh
 ./install.sh
 ```
-**Aviso:**
-
+## Aviso:
+```
 Este repositório é mantido estritamente para meu uso pessoal. Todas as configurações, scripts e aliases incluídos foram desenhados e otimizados especificamente para o meu fluxo de trabalho. Embora o código esteja disponível para consulta ou como base, não recomendo a instalação direta num ambiente diferente sem revisar e adaptar os ficheiros previamente.
-
+```
 
 ![setup](png/rice2.png)

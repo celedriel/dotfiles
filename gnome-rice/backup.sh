@@ -1,15 +1,20 @@
 #!/bin/zsh
 
-echo "Fazendo backup das configurações do GNOME..."
+echo "A fazer backup das configurações do GNOME..."
 cd ~/dotfiles/gnome-rice/
 
 # Interface e Janelas
 dconf dump /org/gnome/desktop/interface/ > interface.ini
 dconf dump /org/gnome/desktop/wm/preferences/ > wm-preferences.ini
 
-# Extensões (Isso já engloba Pop Shell, Tilingshell e outras)
+# Extensões: Pop Shell isolado
+dconf dump /org/gnome/shell/extensions/pop-shell/ > pop-shell.ini
+
+# Extensões: Restantes configurações
 dconf dump /org/gnome/shell/extensions/ > all-extensions-settings.ini
 gnome-extensions list --enabled > enabled-extensions-list.txt
+
+sed -i '/^\[pop-shell\]/,/^$/d' all-extensions-settings.ini
 
 # Atalhos e Teclado
 dconf dump /org/gnome/desktop/wm/keybindings/ > gnome-keybindings.ini

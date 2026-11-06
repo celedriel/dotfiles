@@ -22,5 +22,5 @@ set recolor-darkcolor           "#ebdbb2"
 set recolor                     "true"
 set highlight-color "rgba(250, 189, 47, 0.5)"
 set highlight-active-color "rgba(254, 128, 25, 0.5)"
-unmap s
-map s search
+map p search
+
